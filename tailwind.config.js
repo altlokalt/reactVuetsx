@@ -1,0 +1,41 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        gray_700: "#555555",
+        white_A700_a2: "#ffffffa2",
+        indigo_A200: "#7575f0",
+        indigo_A100: "#9191ff",
+        green_A200: "#75f094",
+        cyan_200: "#75f0f0",
+        bluegray_900: "#1b2250",
+        white_A700_87: "#ffffff87",
+        pink_A100: "#f075c7",
+        black_900_00: "#00000000",
+        black_900_99: "#00000099",
+        black_900: "#000000",
+        blue_300: "#75b2f0",
+        deep_purple_A100: "#b275f0",
+        pink_300: "#f0758a",
+        white_A700: "#ffffff",
+      },
+      fontFamily: { inter: "Inter" },
+      backgroundImage: {
+        gradient: "linear-gradient(267deg ,#00000000,#00000099)",
+        gradient1: "linear-gradient(135deg ,#75f094,#75b2f0)",
+        gradient2: "linear-gradient(135deg ,#75f0f0,#7575f0)",
+        gradient3: "linear-gradient(135deg ,#75b2f0,#b275f0)",
+        gradient4: "linear-gradient(135deg ,#9191ff,#f075c7)",
+        gradient5: "linear-gradient(135deg ,#b275f0,#f0758a)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
